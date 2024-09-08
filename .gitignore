@@ -1,5 +1,4 @@
 templates_c/
-config.php
 /vendor/
 vendor/
 serviceAccountKey.json

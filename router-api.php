@@ -7,9 +7,6 @@ require_once("api/controller/MessageController.php");
 require_once("api/controller/TicketController.php");
 
 // Cabeceras CORS
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-header("Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Custom-Header");
 
 // Manejo de solicitudes OPTIONS (preflight request)
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {

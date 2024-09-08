@@ -4,13 +4,7 @@ class APIView
 {
     public function response($data, $status) {
         // Cabeceras CORS
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-        header("Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization");
-
-        header("Content-Type: application/json");
-        header("HTTP/1.1 " . $status . " " . $this->_requestStatus($status));
-       header($status);
+        
         echo json_encode($data);
     }
 
